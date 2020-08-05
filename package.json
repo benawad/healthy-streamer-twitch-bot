@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "tsc -w",
+    "build": "tsc",
     "start": "node dist/bot.js"
   },
   "keywords": [],

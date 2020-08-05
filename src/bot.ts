@@ -81,6 +81,10 @@ setInterval(() => {
 
       if (x.stream && !go) {
         logger.info("stream just went live, starting healthy bot monitoring");
+        client.say(
+          process.env.CHANNEL_NAME,
+          `hey @${process.env.CHANNEL_NAME} your code works`
+        );
         go = true;
         start(x.stream.created_at);
       } else if (!x.stream && go) {
